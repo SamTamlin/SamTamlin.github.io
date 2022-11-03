@@ -5,6 +5,7 @@
     margin: 0px;
 }
 
+
 html {
     background-image: url("../Images/Castle.jpg");
     object-fit: cover;
@@ -48,8 +49,12 @@ nav li a:hover {
     color: #d67940;
 }
 
+body {
+    background-color: rgba(255, 255, 255, .25);
+}
+
 main {
-    margin-top: 4ch;
+    padding-top: 3ch;
 }
 
 main img {
@@ -76,7 +81,7 @@ h3 {
     display: grid;
     grid-template-columns: 4fr 1fr;
     justify-content: space-around;
-    margin: 1ch 2ch;
+    margin: 1ch 3ch;
 }
 
 .container img {
@@ -119,4 +124,58 @@ a:hover {
 
 .fa-brands{
     height: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 1px;
+}
+
+@media only screen and (min-width: 2500px) {
+    main {
+        margin: auto;
+        max-width: 2500px;
+    }
+    nav {
+        min-height: 5%;
+        font-size: 3%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .icons {
+        padding: 0px;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, .5);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    .icons {
+        background-color: rgba(255, 255, 255, 0);;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    ul {
+        width: 95%;
+    }
+
+    h1 {
+        margin-bottom: 0.25ch;
+    }
+
+    .container {
+        display: inline-block;
+        
+    }
+
+    .fa-node, .fa-git, .fa-github {
+        display: none;
+    }
 }
